@@ -21,7 +21,7 @@ class OpCacheDataModel
 
     public function getPageTitle()
     {
-        return 'PHP ' . phpversion() . " with OpCache {$this->_configuration['version']['version']}";
+        return 'PHP ' . phpversion() . " with OpCache {$this->_configuration['version']['version']} (" . gethostname() . ")";
     }
 
     public function getStatusDataRows()
